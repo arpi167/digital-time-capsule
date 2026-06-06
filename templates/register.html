@@ -1,19 +1,52 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Digital Time Capsule</title>
   </head>
   <body>
-    <h2>Create Account</h2>
+    <h1>Create Account</h1>
 
-    <form>
-      <input type="text" placeholder="Username" /><br /><br />
+    <p>Join Digital Time Capsule and preserve memories for your future self.</p>
 
-      <input type="email" placeholder="Email" /><br /><br />
+    <hr />
 
-      <input type="password" placeholder="Password" /><br /><br />
+    <form method="POST">
+      <label>Username</label><br />
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter Username"
+        required
+      />
+      <br /><br />
+
+      <label>Email</label><br />
+      <input type="email" name="email" placeholder="Enter Email" required />
+      <br /><br />
+
+      <label>Password</label><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+        required
+      />
+      <br /><br />
 
       <button type="submit">Register</button>
     </form>
+
+    <hr />
+
+    <p>
+      Already have an account?
+      <a href="/login">Login Here</a>
+    </p>
+
+    <p>
+      <a href="/">Back to Home</a>
+    </p>
   </body>
 </html>
