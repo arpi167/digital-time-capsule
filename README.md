@@ -133,9 +133,22 @@ Contributions, ideas, and suggestions are welcome.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-Screenshots will be added as development progresses.
+### Home Page
+![Home](assets/homepage.png)
+
+### Register Page
+![Register](assets/register.png)
+
+### Login Page
+![Login](assets/login.png)
+
+### Dashboard
+![Dashboard](assets/dashboard.png)
+
+### Create Capsule
+![Create Capsule](assets/create-capsule.png)
 
 ---
 
