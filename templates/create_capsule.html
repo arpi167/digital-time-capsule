@@ -2,21 +2,43 @@
 <html>
   <head>
     <title>Create Capsule</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
   <body>
-    <h1>Create Time Capsule</h1>
+    <nav class="navbar">
+      <h2>⏳ Digital Time Capsule</h2>
 
-    <form>
-      <label>Title</label><br />
-      <input type="text" /><br /><br />
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+      </div>
+    </nav>
 
-      <label>Message</label><br />
-      <textarea rows="5" cols="40"></textarea><br /><br />
+    <div class="container">
+      <h1 class="page-title">Create Time Capsule</h1>
 
-      <label>Unlock Date</label><br />
-      <input type="date" /><br /><br />
+      <form method="POST">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" name="title" required />
+        </div>
 
-      <button type="submit">Create Capsule</button>
-    </form>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Unlock Date</label>
+          <input type="date" name="unlock_date" required />
+        </div>
+
+        <button type="submit">Create Capsule</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -1,52 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register - Digital Time Capsule</title>
+    <title>Register</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
   <body>
-    <h1>Create Account</h1>
+    <nav class="navbar">
+      <h2>⏳ Digital Time Capsule</h2>
 
-    <p>Join Digital Time Capsule and preserve memories for your future self.</p>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+      </div>
+    </nav>
 
-    <hr />
+    <div class="container">
+      <h1 class="page-title">Create Account</h1>
 
-    <form method="POST">
-      <label>Username</label><br />
-      <input
-        type="text"
-        name="username"
-        placeholder="Enter Username"
-        required
-      />
-      <br /><br />
+      <form method="POST">
+        <div class="form-group">
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+            required
+          />
+        </div>
 
-      <label>Email</label><br />
-      <input type="email" name="email" placeholder="Enter Email" required />
-      <br /><br />
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Enter Email" required />
+        </div>
 
-      <label>Password</label><br />
-      <input
-        type="password"
-        name="password"
-        placeholder="Enter Password"
-        required
-      />
-      <br /><br />
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+        </div>
 
-      <button type="submit">Register</button>
-    </form>
-
-    <hr />
-
-    <p>
-      Already have an account?
-      <a href="/login">Login Here</a>
-    </p>
-
-    <p>
-      <a href="/">Back to Home</a>
-    </p>
+        <button type="submit">Register</button>
+      </form>
+    </div>
   </body>
 </html>

@@ -1,40 +1,51 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Time Capsule</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
   <body>
-    <h1>⏳ Digital Time Capsule</h1>
+    <nav class="navbar">
+      <h2>⏳ Digital Time Capsule</h2>
 
-    <p>
-      Store memories, goals, and messages for your future self. Create digital
-      time capsules and unlock them on a future date.
-    </p>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <a href="/dashboard">Dashboard</a>
+      </div>
+    </nav>
 
-    <hr />
+    <section class="hero">
+      <h1>Preserve Memories For Your Future Self</h1>
 
-    <h2>Welcome</h2>
+      <p>
+        Create digital time capsules, store memories and unlock them in the
+        future.
+      </p>
 
-    <p>
-      Preserve your thoughts, dreams, and important moments. Revisit them when
-      the time is right.
-    </p>
+      <a href="/create-capsule" class="btn"> Create Capsule </a>
+    </section>
 
-    <hr />
+    <section class="features">
+      <div class="card">
+        <h3>🔒 Secure Storage</h3>
+        <p>Keep memories safe until the unlock date.</p>
+      </div>
 
-    <h3>Quick Navigation</h3>
+      <div class="card">
+        <h3>📅 Future Unlock</h3>
+        <p>Choose a future date to reveal your capsule.</p>
+      </div>
 
-    <ul>
-      <li><a href="/register">📝 Register</a></li>
-      <li><a href="/login">🔐 Login</a></li>
-      <li><a href="/dashboard">📂 Dashboard</a></li>
-      <li><a href="/create-capsule">⏳ Create Capsule</a></li>
-    </ul>
-
-    <hr />
-
-    <p>🚀 Developed as part of the Elite Coders Open Source Hackathon 2026.</p>
+      <div class="card">
+        <h3>🎯 Goal Tracking</h3>
+        <p>Record goals and revisit them later.</p>
+      </div>
+    </section>
   </body>
 </html>

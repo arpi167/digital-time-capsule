@@ -2,14 +2,41 @@
 <html>
   <head>
     <title>Dashboard</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
   </head>
   <body>
-    <h1>My Time Capsules</h1>
+    <nav class="navbar">
+      <h2>⏳ Digital Time Capsule</h2>
 
-    <a href="/create-capsule">Create New Capsule</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/create-capsule">Create Capsule</a>
+      </div>
+    </nav>
 
-    <hr />
+    <div class="container">
+      <h1 class="page-title">My Time Capsules</h1>
 
-    <p>No capsules available yet.</p>
+      {% for capsule in capsules %}
+
+      <div class="card-capsule">
+        <h2>{{ capsule[0] }}</h2>
+
+        <p>{{ capsule[1] }}</p>
+
+        <p>
+          <strong>Unlock Date:</strong>
+          {{ capsule[2] }}
+        </p>
+
+        <p class="status">🔒 Locked Capsule</p>
+      </div>
+
+      {% endfor %}
+    </div>
   </body>
 </html>
