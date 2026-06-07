@@ -1,7 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Digital Time Capsule</title>
 
     <link
       rel="stylesheet"
@@ -21,7 +23,7 @@
     <div class="container">
       <h1 class="page-title">Welcome Back</h1>
 
-      <form method="POST">
+      <form method="POST" autocomplete="off">
         <div class="form-group">
           <label>Username</label>
 
@@ -29,6 +31,8 @@
             type="text"
             name="username"
             placeholder="Enter Username"
+            autocomplete="off"
+            spellcheck="false"
             required
           />
         </div>
@@ -40,12 +44,18 @@
             type="password"
             name="password"
             placeholder="Enter Password"
+            autocomplete="new-password"
             required
           />
         </div>
 
         <button type="submit">Login</button>
       </form>
+
+      <p style="margin-top: 20px">
+        Don't have an account?
+        <a href="/register">Create Account</a>
+      </p>
     </div>
   </body>
 </html>

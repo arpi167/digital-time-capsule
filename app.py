@@ -163,10 +163,11 @@ def create_capsule():
 
     return render_template("create_capsule.html")
 
-
 # -------------------------
 # START APP
 # -------------------------
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
+    
