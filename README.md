@@ -141,14 +141,13 @@ Contributions, ideas, and suggestions are welcome.
 ### Register Page
 ![Register](assets/register.png)
 
-### Login Page
-![Login](assets/login.png)
+### Create Capsule
+![Create Capsule](assets/create-capsule.png)
 
 ### Dashboard
 ![Dashboard](assets/dashboard.png)
 
-### Create Capsule
-![Create Capsule](assets/create-capsule.png)
+
 
 ---
 
